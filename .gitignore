@@ -1,0 +1,8 @@
+target/
+.idea/
+*.iml
+perros.json
+gatos.json
+*_respaldo.json
+*.class
+.env

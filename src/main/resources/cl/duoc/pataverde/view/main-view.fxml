@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.duoc.pataverde.controller.MainController">
+   <children>
+      <Label layoutX="226.0" layoutY="14.0" text="CLINICA VETERINARIA PATAVERDE" />
+      <Label layoutX="10.0" layoutY="98.0" text="Tipo:" />
+      <ComboBox fx:id="cmbTipo" layoutX="78.0" layoutY="94.0" prefWidth="150.0" promptText="Seleccionar..." />
+      <Label layoutX="11.0" layoutY="136.0" text="Nombre:" />
+      <TextField fx:id="txtNombre" layoutX="79.0" layoutY="133.0" />
+      <Label layoutX="13.0" layoutY="171.0" text="Edad:" />
+      <TextField fx:id="txtEdad" layoutX="79.0" layoutY="166.0" />
+      <Label layoutX="12.0" layoutY="206.0" text="Peso (kg):" />
+      <TextField fx:id="txtPeso" layoutX="79.0" layoutY="202.0" />
+      <Label layoutX="78.0" layoutY="57.0" text="Ingreso Paciente:" />
+      <Label layoutX="12.0" layoutY="242.0" text="Raza:" />
+      <TextField fx:id="txtRaza" layoutX="79.0" layoutY="238.0" />
+      <Label layoutX="500.0" layoutY="40.0" text="Motivo de la consulta (max 100 caracteres):" />
+      <Label layoutX="12.0" layoutY="270.0" text="Datos del perro" />
+      <CheckBox fx:id="chkVacunado" layoutX="13.0" layoutY="294.0" mnemonicParsing="false" text="Tiene Vacuna" />
+      <CheckBox fx:id="chkAdopcion" layoutX="13.0" layoutY="317.0" mnemonicParsing="false" text="Disponible para adopcion" />
+      <Label layoutX="228.0" layoutY="270.0" text="Datos del Gato:" />
+      <CheckBox fx:id="chkExterior" layoutX="223.0" layoutY="303.0" mnemonicParsing="false" text="Es callejero" />
+      <Label layoutX="557.0" layoutY="234.0" text="Pacientes Registrados" />
+      <Button fx:id="btnRegistrar" layoutX="97.0" layoutY="693.0" mnemonicParsing="false" onAction="#registrarPaciente" style="-fx-background-color: #238447; -fx-text-fill: white;" text="Registrar paciente" />
+      <Button fx:id="btnEliminar" layoutX="504.0" layoutY="697.0" mnemonicParsing="false" onAction="#eliminarPaciente" style="-fx-background-color: #B63037; -fx-text-fill: white;" text="Eliminar paciente" />
+      <TableView fx:id="tblMascotas" layoutX="365.0" layoutY="263.0" prefHeight="169.0" prefWidth="622.0" style="-fx-border-color: #999999;">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="49.0" text="ID" />
+          <TableColumn fx:id="colTipo" prefWidth="71.0" text="Tipo" />
+          <TableColumn fx:id="colNombre" prefWidth="63.0" text="Nombre" />
+            <TableColumn fx:id="colEdad" prefWidth="57.0" text="Edad" />
+            <TableColumn fx:id="colPeso" prefWidth="70.0" text="Peso(kg)" />
+            <TableColumn fx:id="colDueño" prefWidth="71.0" text="Dueño" />
+            <TableColumn fx:id="colRut" prefWidth="127.0" text="RUT" />
+            <TableColumn fx:id="colCosto" prefWidth="97.0" text="Costo consulta" />
+        </columns>
+      </TableView>
+      <Label layoutX="485.0" layoutY="458.0" text="Mensaje:" />
+      <TextField fx:id="txtMensaje" layoutX="538.0" layoutY="451.0" prefHeight="31.0" prefWidth="270.0" />
+      <TextArea fx:id="txtMotivo" layoutX="365.0" layoutY="74.0" prefHeight="143.0" prefWidth="622.0" />
+      <Label layoutX="78.0" layoutY="504.0" text="Antecedentes del paciente " />
+      <TextArea fx:id="txtAntecedentes" layoutX="23.0" layoutY="543.0" prefHeight="93.0" prefWidth="312.0" />
+      <Label layoutX="68.0" layoutY="357.0" text="Datos del responsable (Dueño)" />
+      <Label layoutX="20.0" layoutY="392.0" text="Nombre y Apellido:" />
+      <TextField fx:id="txtNombreDueño" layoutX="134.0" layoutY="385.0" prefHeight="31.0" prefWidth="197.0" />
+      <Label layoutX="26.0" layoutY="443.0" text="RUT:" />
+      <TextField fx:id="txtRutDueño" layoutX="135.0" layoutY="435.0" prefHeight="31.0" prefWidth="197.0" />
+   </children>
+</AnchorPane>
